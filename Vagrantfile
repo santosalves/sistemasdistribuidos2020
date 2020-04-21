@@ -20,6 +20,8 @@ sudo systemctl enable keepalived
 sudo cp /vagrant/nginx.conf /etc/nginx/nginx.conf
 sudo mkdir /etc/nginx/conf2.d
 sudo cp /vagrant/docker-cluster.conf /etc/nginx/conf2.d/docker-cluster.conf
+sudo cp /vagrant/servico-http-docker.conf /etc/nginx/conf.d
+sudo cp /vagrant/servico-http-google.conf /etc/nginx/conf.d
 SCRIPT
 
 $nginx_keepalived_master = <<-SCRIPT
